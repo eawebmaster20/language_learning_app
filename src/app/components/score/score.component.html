@@ -1,0 +1,34 @@
+<div class="main-container">
+  <div class="background-container"></div>
+  <div class="score-container">
+    <div class="score-title">
+      <h1>Score</h1>
+    </div>
+    <div class="score">
+      <h1>{{ score }}</h1>
+    </div>
+    <div class="completion-message">
+      Congratulations, you've completed this quiz!<br />
+      Let's keep testing your knowledge by playing more quizzes!
+    </div>
+
+    @if(wrongQuestions.length > 0){
+          <button class="review-btn"
+     (click)="soundEffect.playSound('sound4')" 
+      (mouseover)="soundEffect.playSound('sound2')"
+       (click)="navigateToReview()">Review</button>
+    <!-- <div class="primary-btn-container">
+      <button class="main-button" 
+      (click)="soundEffect.playSound('sound4')" 
+      (mouseover)="soundEffect.playSound('sound2')"
+      (click)="navigateToReview()">
+        Review Answers
+      </button>
+    </div> -->
+  }
+  @if(congratMsg) {
+    <!-- <p>You got a perfect score!</p> -->
+  }
+
+  </div>
+</div>

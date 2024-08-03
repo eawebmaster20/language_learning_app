@@ -1,0 +1,369 @@
+<!-- Vocabulary Quiz -->
+@if(categoryService.getCurrentCategory() === "vocabulary") {
+<h1 class="logo ds-logo">monolangue</h1>
+<div class="quiz-container">
+  <div class="progress-container">
+    <button class="close" (click)="navigateToDifficultySelect()">
+      <svg
+        class="close-progress"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.5894 0.458496L7.93202 6.1145L2.27602 0.458496L0.390686 2.34383L6.04669 7.99983L0.390686 13.6558L2.27602 15.5412L7.93202 9.88516L13.5894 15.5412L15.4747 13.6558L9.81869 7.99983L15.4747 2.34383L13.5894 0.458496Z"
+          fill="#9E9E9E"
+        />
+      </svg>
+    </button>
+    <div class="progress-bar-bg">
+      <div class="progress-bar"></div>
+      <!-- <input type="range" class="progress-bar" max="100" [(ngModel)]="progressValue"> -->
+      <div class="progress-bar" [style.width.%]="progressValue"></div>
+    </div>
+  </div>
+  <div class="question-container">
+    @if (questionsData.length > 0) {
+    <div class="question">{{ getCurrentQuestion().question }}</div>
+    <div class="question-options">
+      @for(option of getCurrentQuestion().options; track $index) {
+      <div
+        class="option"
+        (click)="getSelectedAnswer(option)"
+        [style]="{'backgroundColor': option === selectedAnswer? 'rgba(224, 120, 157, 0.4)' : ''}"
+        [class]="{
+                  'disabled': shouldDisable(option),
+                  'correct-option': isCorrectOption(option),
+                  'incorrect-option': isIncorrectOption(option),
+                  'selected-option': isSelectedOption(option),
+                }"
+      >
+        {{ option }}
+      </div>
+      }
+    </div>
+    }
+  </div>
+
+  <div class="btns">
+    <div class="primary-btn-container">
+      <button
+        (click)="checkSelectedAnswer()"
+        class="main-button"
+        (click)="playAnswerSound()"
+        (click)="toggleDisabled()"
+        [class]="{ disabled: isDisabled, 'not-disabled': !isDisabled }"
+        [disabled]="!selectedAnswer"
+      >
+        Check
+      </button>
+    </div>
+
+    <button
+      (click)="nextVocabularyQuestion()"
+      class="next"
+      (click)="soundEffects.playSound('sound4')"
+      (click)="toggleDisabled()"
+      [disabled]="!isChecked"
+    >
+      Next
+    </button>
+
+    <!-- <div class="primary-btn-container">
+    </div> -->
+  </div>
+</div>
+}
+
+<!-- Sentence Building -->
+@if(categoryService.getCurrentCategory() === "sentenceBuilding") {
+<div class="quiz-container dialogue-simulation">
+  <div class="progress-container">
+    <button class="close" (click)="navigateToDifficultySelect()">
+      <svg
+        class="close-progress"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.5894 0.458496L7.93202 6.1145L2.27602 0.458496L0.390686 2.34383L6.04669 7.99983L0.390686 13.6558L2.27602 15.5412L7.93202 9.88516L13.5894 15.5412L15.4747 13.6558L9.81869 7.99983L15.4747 2.34383L13.5894 0.458496Z"
+          fill="#9E9E9E"
+        />
+      </svg>
+    </button>
+    <div class="progress-bar-bg">
+      <div class="progress-bar" [style.width.%]="progressValue"></div>
+    </div>
+  </div>
+  <div class="question-container animate__animated animate__fadeInRight">
+    @if (questionsData.length > 0) {
+    <!-- MCQ -->
+    @if (getCurrentQuestion().questionType === 'fill-in') {
+    <div class="mcq">
+      <h3 class="section">Section: {{ getCurrentSectionDescription() }}</h3>
+      <div class="main-question">
+        <h1>{{ getCurrentQuestion().question }}</h1>
+      </div>
+
+      <div class="question-options">
+        @for(option of getCurrentQuestion().options; track $index) {
+        <div
+          class="option"
+          (click)="getSelectedAnswer(option)"
+          [class]="{
+                  'disabled': shouldDisable(option),
+                  'correct-option': isCorrectOption(option),
+                  'incorrect-option': isIncorrectOption(option),
+                  'selected-option': isSelectedOption(option),
+                }"
+        >
+          {{ option }}
+        </div>
+        <!-- <button class="option" (click)="getSelectedAnswer(option)">
+          {{ option }}
+        </button> -->
+        }
+      </div>
+
+      <div class="buttons">
+        <div class="primary-btn-container">
+          <button
+            class="main-button"
+            (click)="checkSelectedAnswer()"
+            (click)="playAnswerSound()"
+          >
+            Check
+          </button>
+        </div>
+        @if(isChecked) {
+        <button
+          class="next"
+          (click)="nextQuestion()"
+          (click)="updateProgressBar()"
+        >
+          Next
+        </button>
+        }
+      </div>
+    </div>
+    } @else if (getCurrentQuestion().questionType === 'construct-sentence') {
+    <div class="fill-in">
+      <h3 class="section">Section: {{ getCurrentSectionDescription() }}</h3>
+      <div class="main-question">
+        <h1>{{ getCurrentQuestion().question }}</h1>
+      </div>
+
+      <!-- Answer Slots -->
+      <div class="answer-slots fillers">
+        @for (option of userFillins; track $index) {
+        <div (click)="removeFiller(option)" class="filler">{{ option }}</div>
+        }
+      </div>
+
+      <!-- Options to select from -->
+      <div class="fillers">
+        @for(option of getCurrentQuestion().options; track $index) {
+        <button
+          [class]="userFillins.includes(option) ? 'selected' : 'filler'"
+          [disabled]="userFillins.includes(option)"
+          (click)="checkSentence(option)"
+        >
+          {{ option }}
+        </button>
+        }
+      </div>
+      <div class="buttons">
+        <div class="primary-btn-container">
+          <button class="main-button" (click)="checkConstructedSentence()">
+            Check
+          </button>
+        </div>
+        @if (isChecked) {
+
+        <button
+          class="next"
+          (click)="nextQuestion()"
+          (click)="updateProgressBar()"
+        >
+          Next
+        </button>
+        }
+      </div>
+    </div>
+    } }
+  </div>
+</div>
+}
+
+<!-- Dialogue Simulation -->
+@if(categoryService.getCurrentCategory() === "dialogueSimulation") {
+<div class="quiz-container dialogue-simulation">
+  <div class="progress-container">
+    <button class="close" (click)="navigateToDifficultySelect()">
+      <svg
+        class="close-progress"
+        width="16"
+        height="16"
+        viewBox="0 0 16 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.5894 0.458496L7.93202 6.1145L2.27602 0.458496L0.390686 2.34383L6.04669 7.99983L0.390686 13.6558L2.27602 15.5412L7.93202 9.88516L13.5894 15.5412L15.4747 13.6558L9.81869 7.99983L15.4747 2.34383L13.5894 0.458496Z"
+          fill="#9E9E9E"
+        />
+      </svg>
+    </button>
+    <div class="progress-bar-bg">
+      <div class="progress-bar" [style.width.%]="progressValue"></div>
+    </div>
+  </div>
+  <div class="question-container animate__animated animate__fadeInRight">
+    @if (questionsData.length > 0) {
+    <!-- MCQ -->
+    @if (getCurrentQuestion().questionType === 'mcq') {
+    <div class="mcq">
+      <h3 class="section">Section: {{ getCurrentSectionDescription() }}</h3>
+      <div class="main-question">
+        <h1>{{ getCurrentQuestion().question }}</h1>
+        <button
+          class="play-sound"
+          (click)="playSound(getCurrentQuestion().audioUrl)"
+        >
+          <img src="../../../assets/Images/speaker.svg" alt="speaker" />
+        </button>
+      </div>
+
+      <div class="question-options">
+        @for(option of getCurrentQuestion().options; track $index) {
+        <button
+          [class]="option === selectedAnswer ? 'selected-option' : 'option'"
+          (click)="getSelectedAnswer(option)"
+        >
+          {{ option }}
+        </button>
+        }
+      </div>
+
+      <div class="buttons">
+        <div class="primary-btn-container">
+          <button class="main-button" (click)="checkConstructedSentence()">
+            Check
+          </button>
+        </div>
+        @if (isChecked) {
+
+        <button
+          class="next"
+          (click)="nextQuestion()"
+          (click)="updateProgressBar()"
+        >
+          Next
+        </button>
+        }
+      </div>
+    </div>
+    } @else if (getCurrentQuestion().questionType === 'construct-sentence') {
+    <div class="fill-in">
+      <h3 class="section">Section: {{ getCurrentSectionDescription() }}</h3>
+      <div class="main-question">
+        <h1>{{ getCurrentQuestion().question }}</h1>
+        <button
+          class="play-sound"
+          (click)="playSound(getCurrentQuestion().audioUrl)"
+        >
+          <img src="../../../assets/Images/speaker.svg" alt="speaker" />
+        </button>
+      </div>
+
+      <!-- Answer Slots -->
+      <div class="answer-slots fillers">
+        @for (option of userFillins; track $index) {
+        <div (click)="removeFiller(option)" class="filler">{{ option }}</div>
+        }
+      </div>
+
+      <!-- Options to select from -->
+      <div class="fillers">
+        @for(option of getCurrentQuestion().options; track $index) {
+        <button
+          [class]="userFillins.includes(option) ? 'selected' : 'filler'"
+          [disabled]="userFillins.includes(option)"
+          (click)="checkSentence(option)"
+        >
+          {{ option }}
+        </button>
+        }
+      </div>
+      <div class="buttons">
+        <div class="primary-btn-container">
+          <button class="main-button" (click)="checkConstructedSentence()">
+            Check
+          </button>
+        </div>
+        @if (isChecked) {
+
+        <button
+          class="next"
+          (click)="nextQuestion()"
+          (click)="updateProgressBar()"
+        >
+          Next
+        </button>
+        }
+      </div>
+    </div>
+    } @else if (getCurrentQuestion().questionType === 'fill-in') {
+    <div class="fill-in">
+      <h3 class="section">Section: {{ getCurrentSectionDescription() }}</h3>
+      <div class="main-question">
+        <h1>{{ getCurrentQuestion().question }}</h1>
+        <button
+          class="play-sound"
+          (click)="playSound(getCurrentQuestion().audioUrl)"
+        >
+          <img src="../../../assets/Images/speaker.svg" alt="speaker" />
+        </button>
+      </div>
+
+      <div class="question-options">
+        @for(option of getCurrentQuestion().options; track $index) {
+        <button
+          [class]="option === selectedAnswer ? 'selected-option' : 'option'"
+          (click)="getSelectedAnswer(option)"
+        >
+          {{ option }}
+        </button>
+        }
+      </div>
+
+      <div class="buttons">
+        <div class="primary-btn-container">
+          <button
+            class="main-button"
+            (click)="checkSelectedAnswer()"
+            (click)="playAnswerSound()"
+          >
+            Check
+          </button>
+        </div>
+        @if (isChecked) {
+        <button
+          class="next"
+          (click)="nextQuestion()"
+          (click)="updateProgressBar()"
+        >
+          Next
+        </button>
+        }
+      </div>
+    </div>
+    } }
+  </div>
+</div>
+}

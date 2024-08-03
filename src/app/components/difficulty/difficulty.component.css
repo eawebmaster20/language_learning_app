@@ -1,0 +1,150 @@
+  /* .background-container {
+background-image: url('../../../assets/Images/difficulty-selection-bg.png'); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient(to bottom, #f9e4eb, #f5e6dc, #f4e7d7);
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+  */
+
+.ds-logo {
+  position: absolute;
+  top: 64px;
+  left: 102px;
+  z-index: 3;
+}
+.ds-main-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+  padding-bottom: 30px;
+}
+
+.ds-container {
+  width: 100%;
+  max-width: 725px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 12px;
+  /* background: red; */
+}
+
+.ds-penguin {
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.ds-container h4 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--dark-01);
+}
+.ds-container p {
+  font-size: 1.25rem;
+  margin-bottom: 50px;
+  color: var(--dark-01);
+  text-align: center;
+}
+
+.ds-options {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 50px;
+  /* background: yellow; */
+}
+
+.my-main-button {
+  width: 200px;
+  height: 51px;
+  font-size: 1.25rem;
+  border-radius: 50px;
+  border: none;
+  background: #f0d1cb;
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  transition: all 0.2s;
+}
+.my-main-button:hover {
+  border: 1px solid var(--pink);
+}
+.my-main-button:active {
+  transform: scale(0.97);
+}
+
+.ds-onboarding-progress {
+  visibility: hidden;
+  margin-bottom: 24px;
+}
+
+.ds-btn {
+  visibility: hidden;
+}
+
+.ds-btn.active {
+  visibility: visible;
+}
+
+@media only screen and (max-width: 375px) {
+  .ds-container {
+    min-width: 375px;
+    padding: 0 32px;
+  }
+
+  .ds-options {
+    flex-direction: column;
+  }
+
+  .ds-logo {
+    top: 30px;
+    left: 30px;
+    font-size: 1.5rem;
+  }
+
+  .ds-penguin {
+    width: 122.73px;
+    margin-bottom: 16px;
+  }
+
+  .ds-container p {
+    margin-bottom: 16px;
+  }
+
+  .my-main-button {
+    width: 100%;
+    height: 51px;
+    font-size: 1.2rem;
+  }
+
+  .ds-btn {
+    width: 162px;
+
+    button {
+      width: 150px;
+    }
+  }
+
+  .ds-onboarding-progress {
+    visibility: visible;
+  }
+
+  .background-container {
+    background: linear-gradient(to bottom, #f9e4eb, #f8f3e7);
+  }
+}

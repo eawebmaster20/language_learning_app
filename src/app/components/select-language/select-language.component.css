@@ -1,0 +1,154 @@
+.select-language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo {
+  align-self: flex-start;
+  margin-top: 4rem;
+}
+
+.select-language__image {
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.image-div {
+  height: 12.3rem;
+}
+
+.image-div img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+div.language {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.onboarding {
+  margin: 0.7rem 0;
+}
+
+.btn {
+  font-size: 1.5rem;
+  width: 100%;
+  height: 5.7rem;
+  cursor: pointer;
+}
+
+.language-btn {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+  border: 0.15rem solid transparent;
+  border-radius: 1.8rem;
+  padding-left: 2.3rem;
+  font-weight: 700;
+  background: rgba(224, 120, 157, 0.2);
+  color: #2c2c2c;
+  padding-right: 1.6rem;
+}
+
+button.disabled {
+  background: rgba(224, 120, 156, 0.084);
+}
+
+button.disabled:focus-within,
+button.disabled:hover,
+button.disabled:active {
+  border: 0.15rem solid transparent;
+}
+.language-btn:focus-within,
+.language-btn:hover,
+.language-btn:active {
+  border: 0.15rem solid #e0789d;
+}
+
+.btn:link,
+.btn:active {
+  text-decoration: none;
+}
+
+.continue-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7e2fff;
+  border-radius: 1.8rem;
+  text-align: center;
+  font-size: 2.4rem;
+  color: #fff;
+  visibility: hidden;
+}
+
+.primary-btn-container {
+  visibility: hidden;
+}
+
+.primary-btn-container.active {
+  visibility: visible;
+}
+
+@media (min-width: 1024px) {
+  .select-language {
+    max-width: 100%;
+    padding: 6.4rem 10.2rem;
+  }
+
+  .image-div {
+    height: 20rem;
+  }
+
+  .text {
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  .btn {
+    width: 20rem;
+  }
+
+  div.language {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 41rem;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .onboarding {
+    display: none;
+  }
+
+  .primary-btn-container {
+    margin-top: 1.5rem;
+  }
+}

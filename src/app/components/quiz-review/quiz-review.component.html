@@ -1,0 +1,41 @@
+<div class="qr-main-container">
+  <div class="background">
+    <div class="heading">
+      <h4>QUIZ REVIEW</h4>
+      <h5>{{ score }} | {{ answeredQuestions.length }}</h5>
+    </div>
+  </div>
+
+  <div class="qr-container">
+    <div class="qr-content">
+      <!-- retake quiz button -->
+      @if(wrongQuestions.length > 0){
+      <div class="primary-btn-container">
+        <button
+          class="main-button"
+          (click)="soundEffect.playSound('sound4')"
+          (mouseover)="soundEffect.playSound('sound2')"
+          (click)="navigateToMode()"
+        >
+          Restart Quiz
+        </button>
+      </div>
+      } @for (question of wrongQuestions; track $index) {
+      <div class="qr-item">
+        <div class="qr-question">
+          <p>QUESTION</p>
+          <p>{{ question.split(",")[0] }}</p>
+        </div>
+        <div class="qr-selected">
+          <p>SELECTED OPTION</p>
+          <p>{{ question.split(",")[1] }}</p>
+        </div>
+        <div class="qr-answer">
+          <p>ANSWER</p>
+          <p>{{ question.split(",")[2] }}</p>
+        </div>
+      </div>
+      }
+    </div>
+  </div>
+</div>

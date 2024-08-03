@@ -1,0 +1,30 @@
+@if(categoryService.getCurrentCategory() === "vocabulary") {
+    <div class="quiz-container">
+        <div class="progress-container">
+            <svg class="close-progress" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.5894 0.458496L7.93202 6.1145L2.27602 0.458496L0.390686 2.34383L6.04669 7.99983L0.390686 13.6558L2.27602 15.5412L7.93202 9.88516L13.5894 15.5412L15.4747 13.6558L9.81869 7.99983L15.4747 2.34383L13.5894 0.458496Z" fill="#9E9E9E"/>
+            </svg>
+            <div class="progress-bar-bg">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="question-container">
+            @if (questionsData.length > 0) {
+                <h3 class="section">{{ getCurrentSectionDescription() }}</h3>
+                <div class="blurred-background">
+                <div class="question">{{ getCurrentQuestion().question }}</div>
+                </div>
+                <div class="question-options">
+                @for(option of getCurrentQuestion().options; track $index) {
+                <div class="option">{{ option }}</div>
+                }
+                </div>
+            }
+        </div>
+
+        <div class="btns">
+            <button (click)="nextQuestion()" class="check-btn btn">Check</button>
+            <button (click)="nextQuestion()" class="next-btn btn">Next</button>
+        </div>
+    </div>
+}

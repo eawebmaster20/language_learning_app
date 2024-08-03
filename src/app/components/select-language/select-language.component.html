@@ -1,0 +1,118 @@
+<div class="select-language">
+  <h1 class="logo">Language Learning App</h1>
+
+  <div class="select-language__image">
+    <div class="image-div">
+      <img src="../../../assets/Images/penguin.png" alt="penguin image" />
+    </div>
+    <p class="text">What language would you like to learn?</p>
+  </div>
+  <div class="language  row">
+    <button
+      class="btn language-btn  disabled"
+      (click)="onLanguageSelect('Arabic')"
+    >
+      <div class="lang">
+        <span>
+          <img src="../../../assets/Images/arab.png" alt="arab flag" />
+        </span>
+        <span>Arabic</span>
+      </div>
+
+      @if (selectedLanguage === 'Arabic') {
+      <span>
+        <img src="../../../assets/Images/tick-circle.svg" alt="tick" />
+      </span>
+      }
+    </button>
+    <button
+      class="btn language-btn disabled"
+      (click)="onLanguageSelect('Chinese')"
+    >
+      <div class="lang">
+        <span>
+          <img src="../../../assets/Images/china.png" alt="Chinese flag" />
+        </span>
+        <span>Chinese</span>
+      </div>
+
+      @if (selectedLanguage === 'Chinese') {
+      <span>
+        <img src="../../../assets/Images/tick-circle.svg" alt="tick" />
+      </span>
+      }
+    </button>
+    <button
+      class="btn language-btn disabled"
+      (click)="onLanguageSelect('English')"
+    >
+      <div class="lang">
+        <span>
+          <img src="../../../assets/Images/usa.png" alt="Usa flag" />
+        </span>
+        <span>English</span>
+      </div>
+
+      @if (selectedLanguage === 'English') {
+      <span>
+        <img src="../../../assets/Images/tick-circle.svg" alt="tick" />
+      </span>
+      }
+    </button>
+    <button
+      (mouseover)="soundEffect.playSound('sound2')"
+      class="btn language-btn active"
+      (click)="onLanguageSelect('French')"
+    >
+      <div class="lang">
+        <span>
+          <img src="../../../assets/Images/france.png" alt="france flag" />
+        </span>
+        <span>French</span>
+      </div>
+
+      @if (selectedLanguage === 'French') {
+      <span>
+        <img src="../../../assets/Images/tick-circle.svg" alt="tick" />
+      </span>
+      }
+    </button>
+    <button
+      class="btn language-btn disabled"
+      (click)="onLanguageSelect('German')"
+    >
+      <div class="lang">
+        <span>
+          <img src="../../../assets/Images/german.png" alt="german flag" />
+        </span>
+        <span>German</span>
+      </div>
+
+      @if (selectedLanguage === 'German') {
+      <span>
+        <img src="../../../assets/Images/tick-circle.svg" alt="tick" />
+      </span>
+      }
+    </button>
+  </div>
+  <div class="onboarding">
+    <img
+      src="../../../assets/Images/Onboarding-lang.png"
+      alt="onboarding svg"
+    />
+  </div>
+
+  @if (isLanguageSelected) {
+  <div class="primary-btn-container active">
+    <button
+      class="main-button"
+      (click)="soundEffect.playSound('sound4')" 
+      [class.active]="isLanguageSelected"
+      (mouseover)="soundEffect.playSound('sound2')"
+      (click)="onContinue()"
+    >
+      Continue
+    </button>
+  </div>
+  }
+</div>

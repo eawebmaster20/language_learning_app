@@ -1,0 +1,77 @@
+<div class="main-container">
+  <h1 class="logo">Language Learning APP</h1>
+
+  <div class="content">
+    <h2>Select a game you’d like to play</h2>
+    <p class="kicker">Choose a game mode to test your language proficiency</p>
+
+    <div class="cards">
+      <div class="mode-card vocabulary">
+        <div class="image">
+          <img
+            src="../../../assets/Images/vocabulary-penguin.png"
+            alt="Penguin"
+          />
+        </div>
+        <div class="info" (mouseover)="soundEffect.playSound('sound2')">
+          <div class="left">
+            <h1 class="title">Vocabulary Quiz</h1>
+            <p class="description">
+              Complete a series of quizzes to test your vocabulary
+            </p>
+          </div>
+          <div class="right">
+            <button class="play" (click)="setCategory('vocabulary')">
+              <img src="../../../assets/Images/play.svg" alt="Play Button" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mode-card sentence">
+        <div class="image">
+          <img
+            src="../../../assets/Images/sentence-building.png"
+            alt="Penguin"
+          />
+        </div>
+        <div class="info" (mouseover)="soundEffect.playSound('sound2')">
+          <div class="left">
+            <h1 class="title">Sentence Building</h1>
+            <p class="description">
+              Practice building sentences to enforce your knowledge in the
+              language
+            </p>
+          </div>
+          <div class="right">
+            <button class="play"  (click)="setCategory('sentenceBuilding')">
+              <img src="../../../assets/Images/play.svg" alt="Play Button" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mode-card dialogue">
+        <div class="image">
+          <img
+            src="../../../assets/Images/dialogue-penguin.png"
+            alt="Penguin"
+          />
+        </div>
+        <div class="info" (mouseover)="soundEffect.playSound('sound2')">
+          <div class="left">
+            <h1 class="title">Dialogue Simulation</h1>
+            <p class="description">
+              Practice speaking the language through interactive dialogues
+            </p>
+          </div>
+          <div class="right">
+            <button class="play" (click)="setCategory('dialogueSimulation')">
+              <img src="../../../assets/Images/play.svg" alt="Play Button" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

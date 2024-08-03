@@ -1,0 +1,27 @@
+<!-- <div class="background-container"> -->
+    <h1 class="logo ds-logo">Language Learning App</h1>
+    <div class="ds-main-container">
+        <div class="ds-container">
+            <img class="ds-penguin" src="../../../assets/Images/penguin.png" alt="penguin">
+            <h4>Select Difficulty</h4>
+            <p>Adjust the difficulty level based on your language proficiency</p>
+            <div class="ds-options">
+                @for(diff of difficulty.difficultyLevel; track diff) {
+                    <button class="my-main-button" (click)="soundEffect.playSound('sound4')" (mouseover)="soundEffect.playSound('sound2')" [id]="diff" (click)="onDifficultySelect($event)">{{ diff.charAt(0).toUpperCase() + diff.slice(1) }}</button>
+                }
+            </div>
+            <img class="ds-onboarding-progress" src="../../../assets/Images/Onboarding Progress.png" alt="onboarding progress">
+            <div class="primary-btn-container ds-btn" [class.active]="difficultySelected" >
+                <button
+                    (click)="soundEffect.playSound('sound4')"
+                    (mouseover)="soundEffect.playSound('sound2')"
+                    class="main-button"
+                    (click)="navigateToSelectedMode()">
+                    CONTINUE
+                </button>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+

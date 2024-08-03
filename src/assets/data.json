@@ -1,0 +1,1141 @@
+{
+  "vocabulary": {
+    "beginner": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "mcq",
+            "question": "Which one of these is 'hello'?",
+            "word": "salut",
+            "options": ["bonjour", "oui", "merci", "salut"],
+            "answer": "salut"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Say 'Good morining' to Rhoda. _ Rhoda!",
+            "word": "bonjour",
+            "options": ["bonjour", "oui", "salut", "merci"],
+            "answer": "bonjour"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which one of these is 'goodbye'?",
+            "word": "au revoir",
+            "options": ["merci", "oui", "au revoir", "salut"],
+            "answer": "au revoir"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Select the correct meaning: 'goodnight'?",
+            "word": "bonne nuit",
+            "options": ["merci", "oui", "au revoir", "bonne nuit"],
+            "answer": "bonne nuit"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: Good evening",
+            "word": "bonsoir",
+            "options": ["merci", "bonsoir", "au revoir", "salut"],
+            "answer": "bonsoir"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: yes",
+            "word": "oui",
+            "options": ["oui", "nuit", "fille", "je"],
+            "answer": "oui"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "_ suis Sam!",
+            "word": "je",
+            "options": ["tu", "nous", "je", "ils"],
+            "answer": "je"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: am",
+            "word": "suis",
+            "options": ["nous", "suis", "vous", "les"],
+            "answer": "suis"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Select the correct meaning: 'no'?",
+            "word": "non",
+            "options": ["oui", "non", "moi", "jour"],
+            "answer": "non"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'maybe'",
+            "word": "peut-être",
+            "options": ["oui", "non", "moi", "peut-être"],
+            "answer": "peut-être"
+          }
+        ]
+      }
+    },
+    "intermediate": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "mcq",
+            "question": "Which one of these is 'thank you'?",
+            "word": "merci",
+            "options": ["bonjour", "oui", "merci", "salut"],
+            "answer": "merci"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Please: 'S'il vous _",
+            "word": "plaît",
+            "options": ["rein", "plaît", "oui", "non"],
+            "answer": "plaît"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which one of these is 'nice to meet you'?",
+            "word": "enchanté(e)",
+            "options": ["merci", "oui", "enchantée", "plait"],
+            "answer": "enchantée"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Select the correct meaning: 'welcome'?",
+            "word": "bienvenue",
+            "options": ["merci", "oui", "enchantée", "bienvenue"],
+            "answer": "bienvenue"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: good day",
+            "word": "bonne journée",
+            "options": ["merci", "bonne journée", "bienvenue", "salut"],
+            "answer": "bonne journée"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: The day",
+            "word": "le jour",
+            "options": ["le jour", "la nuit", "une fille", "je"],
+            "answer": "le jour"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "garçon _ fille.",
+            "word": "et",
+            "options": ["et", "un", "une", "suis"],
+            "answer": "et"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'house'",
+            "word": "maison",
+            "options": ["jour", "maison", "livre", "école"],
+            "answer": "maison"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Select the correct meaning: 'work'?",
+            "word": "travail",
+            "options": ["maison", "livre", "travail", "jour"],
+            "answer": "travail"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'store'",
+            "word": "magasin",
+            "options": ["magasin", "maison", "livre", "école"],
+            "answer": "magasin"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'book'",
+            "word": "livre",
+            "options": ["magasin", "maison", "livre", "école"],
+            "answer": "livre"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'boy'",
+            "word": "garçon",
+            "options": ["garçon", "fille", "femme", "homme"],
+            "answer": "garçon"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'girl'",
+            "word": "fille",
+            "options": ["garçon", "fille", "femme", "homme"],
+            "answer": "fille"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'man'",
+            "word": "homme",
+            "options": ["garçon", "fille", "femme", "homme"],
+            "answer": "homme"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'woman'",
+            "word": "femme",
+            "options": ["garçon", "fille", "femme", "homme"],
+            "answer": "femme"
+          }
+        ]
+      }
+    },
+    "advanced": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "mcq",
+            "question": "Which one of these is 'see you later'?",
+            "word": "à plus tard",
+            "options": ["à plus tard", "bonne journée", "bienvenue", "salut"],
+            "answer": "à plus tard"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Excuse me Rhoda!. _ Rhoda!",
+            "word": "excusez-moi",
+            "options": ["à plus tard", "bienvenue", "excusez-moi", "merci"],
+            "answer": "excusez-moi"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which one of these is 'see you tommorrow'?",
+            "word": "à demain",
+            "options": ["merci", "bienvenue", "à demain", "à plus tard"],
+            "answer": "à demain"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Select the correct meaning: 'journey'?",
+            "word": "voyage",
+            "options": ["travail", "magasin", "bonne journée", "voyage"],
+            "answer": "voyage"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Write it in French, 'safe journey'",
+            "word": "bon voyage",
+            "options": ["bon nuit", "bonsoir", "travail", "bon voyage"],
+            "answer": "bon voyage"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which one of these is a'car'?",
+            "word": "voiture",
+            "options": ["chat", "chien", "voiture", "tableau"],
+            "answer": "voiture"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: Weather",
+            "word": "temp",
+            "options": ["temp", "chien", "voiture", "chat"],
+            "answer": "temp"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: to go",
+            "word": "aller",
+            "options": ["aller", "avoir", "parler", "dire"],
+            "answer": "aller"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: to have",
+            "word": "avoir",
+            "options": ["aller", "avoir", "parler", "dire"],
+            "answer": "avoir"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: to say",
+            "word": "dire",
+            "options": ["aller", "avoir", "parler", "dire"],
+            "answer": "dire"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: To eat",
+            "word": "manger",
+            "options": ["aller", "manger", "parler", "dire"],
+            "answer": "manger"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Fill-in: _ es Sam!",
+            "word": "tu",
+            "options": ["tu", "nous", "vous", "ils"],
+            "answer": "tu"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'to speak'",
+            "word": "parler",
+            "options": ["aller", "avoir", "parler", "dire"],
+            "answer": "parler"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Select the correct meaning: 'to be'?",
+            "word": "être",
+            "options": ["être", "avoir", "parler", "dire"],
+            "answer": "être"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'to want'",
+            "word": "vouloir",
+            "options": ["aller", "avoir", "parler", "vouloir"],
+            "answer": "vouloir"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: petite",
+            "word": "small",
+            "options": ["larger", "big", "small", "pretty"],
+            "answer": "small"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: bad",
+            "word": "mauvais",
+            "options": ["petite", "mauvais", "jeune", "bon"],
+            "answer": "mauvais"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: young",
+            "word": "jeune",
+            "options": ["petite", "mauvais", "jeune", "bon"],
+            "answer": "jeune"
+          },
+
+          {
+            "questionType": "mcq",
+            "question": "Choose the correct translation: beautiful",
+            "word": "beau",
+            "options": ["beau", "mauvais", "jeune", "viens"],
+            "answer": "beau"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Which of these is 'the orange'?",
+            "word": "orange",
+            "options": ["orange", "papaya", "avocado", "pizza"],
+            "answer": "orange"
+          }
+        ]
+      }
+    }
+  },
+  "sentenceBuilding": {
+    "beginner": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "fill-in",
+            "question": "Comment _ va?",
+            "sentence": "How are you?",
+            "options": ["ce", "ci", "ça", "sa"],
+            "answer": "ça"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'I am fine' in French",
+            "sentence": "I am fine",
+            "options": ["bien", "je", "vais", "acheter", "vouloir", "tu"],
+            "answer": "je vais bien"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Construct the sentence: 'What is your name?'",
+            "sentence": "What is your name?",
+            "options": ["Comment", "tu", "t'appelles", "s'appelle", "je", "Ça"],
+            "answer": "Comment tu t'appelles?"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Construct the sentence: 'My name is Eric'",
+            "sentence": "My name is Eric",
+            "options": ["m'appelle", "Mon", "nom", "Eric", "est", "et"],
+            "answer": "Mon nom est Eric"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Construct the sentence: 'I am a boy'",
+            "sentence": "I am a boy",
+            "options": ["suis", "un", "Je", "garçon", "une", "belle"],
+            "answer": "Je suis un garçon"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "construct-sentence",
+            "question": "Write in English: 'Tu manges une orange'",
+            "sentence": "Tu manges une orange",
+            "options": ["eating", "an", "orange", "you", "are", "selling"],
+            "answer": "You are eating an orange"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "chat _ chein?",
+            "sentence": "cat and dog",
+            "options": ["ce", "et", "est", "sa"],
+            "answer": "et"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "Write in French: 'Are you a man?'",
+            "sentence": "Are you a man?",
+            "options": ["fille", "Es-tu", "un", "homme", "garçon", "vous"],
+            "answer": "Es-tu un homme"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "Write in English: 'Tu es un chien'",
+            "sentence": "Tu es un chien",
+            "options": ["a", "dog", "You", "are", "it", "is"],
+            "answer": "You are a dog"
+          },
+
+          {
+            "questionType": "fill-in",
+            "question": " un homme  et _ femme",
+            "sentence": "a man and a woman",
+            "options": ["un", "une", "et", "sa"],
+            "answer": "une"
+          }
+        ]
+      }
+    },
+    "intermediate": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "fill-in",
+            "question": "_ rien",
+            "sentence": "You are welcome",
+            "options": ["de", "le", "la", "un"],
+            "answer": "de"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Quel est _ nom?",
+            "sentence": "What is your name?",
+            "options": ["ton", "mon", "son", "notre"],
+            "answer": "ton"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'I am going to the store' in French",
+            "sentence": "I am going to the store",
+            "options": ["magasin", "au", "je", "vais", "tu", "maison"],
+            "answer": "je vais au magasin"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'This is a book' in French",
+            "sentence": "This is a book",
+            "options": ["livre", "est", "un", "c'est", "bain", "pain"],
+            "answer": "c'est un livre"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'Une fille mange un croissant' in English",
+            "sentence": "Une fille mange un croissant",
+            "options": ["girl", "croissant", "eating", "a", "is", "woman", "dancing"],
+            "answer": "A girl is eating a croissant"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'A woman is eating an orange' in French",
+            "sentence": "A woman is eating an orange",
+            "options": ["une", "mange", "une", "femme", "orange", "voudrais", "aller"],
+            "answer": "une femme mange une orange"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'A man and a cat' in French",
+            "sentence": "A man and a cat",
+            "options": ["un", "chat", "et", "un", "homme", "est", "une"],
+            "answer": "un homme et un chat"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'It's an orange' in French",
+            "sentence": "It's an orange",
+            "options": ["c'est", "un", "il", "elle" ,"orange", "une"],
+            "answer": "c'est une orange"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'It is a school' in French",
+            "sentence": "It is a school",
+            "options": ["c'est", "un", "les", "école", "une", "le"],
+            "answer": "c'est une école"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'I am going to work' in French",
+            "sentence": "I am going to work",
+            "options": ["au", "je", "travail", "vais", "websérie"],
+            "answer": "je vais au travail"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'We are coming home' in French",
+            "sentence": "We are coming home",
+            "options": ["maison", "nous", "venons", "à", "magasin", "vous"],
+            "answer": "nous venons à la maison"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'a handsome boy' in French",
+            "sentence": "a handsome boy",
+            "options": ["beau", "un", "garçon", "jeune", "belle", "une"],
+            "answer": "un garçon beau"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'a beautiful girl' in French",
+            "sentence": "a beautiful girl",
+            "options": ["belle", "une", "fille", "petite", "un", "beau"],
+            "answer": "une fille belle"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'a big house' in French",
+            "sentence": "a big house",
+            "options": ["grande", "une", "maison", "garçon", "petite", "magasin"],
+            "answer": "une maison grande"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'a small cat' in French",
+            "sentence": "a small cat",
+            "options": ["petit", "un", "chat", "fille", "une", "chein"],
+            "answer": "un chat petit"
+          }
+        ]
+      }
+    },
+    "advanced": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'The man is a doctor' in French",
+            "sentence": "The man is a doctor",
+            "options": ["médecin", "une", "médecine", "L'homme", "est", "un"],
+            "answer": "L'homme est un médecin"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'The boy is my friend' in French",
+            "sentence": "The boy is my friend",
+            "options": ["Le", "l'garçon", "garçon", "est", "ton", "mon", "ami"],
+            "answer": "Le garçon est mon ami"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'I speak French' in French",
+            "sentence": "I speak French",
+            "options": ["Ils", "Je", "dire", "parle", "français", "montre"],
+            "answer": "Je parle français"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'She is a teacher' in French",
+            "sentence": "She is a teacher",
+            "options": ["est", "Elle", "et", "Il", "professeur", "enseigner"],
+            "answer": "Elle est professeur"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'He is a student' in French",
+            "sentence": "He is a student",
+            "options": ["et", "garçon", "Il", "est", "étudiant", "agréable"],
+            "answer": "Il est étudiant"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'She is a doctor' in French",
+            "sentence": "She is a doctor",
+            "options": ["enseigner", "Elle", "professeur", "est", "médecin", "infirmière"],
+            "answer": "Elle est médecin"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'He is a teacher' in French",
+            "sentence": "He is a teacher",
+            "options": ["enseigner", "Il", "un", "est", "maison", "professeur"],
+            "answer": "Il est professeur"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'She is a student' in French",
+            "sentence": "She is a student",
+            "options": ["étudiante", "la", "Elle", "est", "magasin", "fille"],
+            "answer": "Elle est étudiante"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'The book is on the table' in French",
+            "sentence": "The book is on the table",
+            "options": ["chaise", "la table", "devant", "Le livre", "est", "sur", "chat"],
+            "answer": "Le livre est sur la table"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "je suis _ femme",
+            "sentence": "Je suis une femme",
+            "options": ["moi", "un", "une", "et"],
+            "answer": "une"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "fill-in",
+            "question": "_ est ma sœur",
+            "sentence": "Elle est ma sœur",
+            "options": ["Elle", "Il", "Nous", "Vous"],
+            "answer": "Elle"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "_ sommes une famille",
+            "sentence": "Nous sommes une famille",
+            "options": ["Nous", "Vous", "Ils", "Je"],
+            "answer": "Nous"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'I want coke and pizza' in French",
+            "sentence": "I want coke and pizza",
+            "options": ["Je", "et", "tasse", "pizza", "Tu", "veux", "coca"],
+            "answer": "Je veux coca et pizza"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'I am hungry' in French",
+            "sentence": "I am hungry",
+            "options": ["es", "je", "affamé", "fatigué", "suis", "très"],
+            "answer": "je suis affamé"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "I eat everyday: Je _ chaque jour",
+            "sentence": "I eat every day",
+            "options": ["mange", "bois", "regarde", "écoute"],
+            "answer": "mange"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Le temps est _",
+            "sentence": "The weather is good",
+            "options": ["bon", "mauvais", "chaud", "froid"],
+            "answer": "bon"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "The car is orange: La _ est orange",
+            "sentence": "The car is orange",
+            "options": ["voiture", "maison", "arbre", "chat"],
+            "answer": "voiture"
+          },
+
+          {
+            "questionType": "fill-in",
+            "question": "Je _ être infirmière",
+            "sentence": "I want to be a nurse",
+            "options": ["veux", "suis", "ai", "fais"],
+            "answer": "veux"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'My brother is a carpenter' in French",
+            "sentence": "My brother is a carpenter",
+            "options": ["père", "charpentier", "un", "est", "frère", "mon", "chapelle"],
+            "answer": "mon frère est un charpentier"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Write 'I love oranges' in French",
+            "sentence": "I love oranges",
+            "options": ["comme", "le", "oranges", "j'", "aime", "les"],
+            "answer": "j'aime les oranges"
+          }
+        ]
+      }
+    }
+  },
+
+  "dialogueSimulation": {
+    "beginner": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "mcq",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/bonjour.mp3",
+            "options": ["bonsoir", "bonjour", "bon nuit", "bon voyage"],
+            "answer": "bonjour"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/howAreYou.mp3",
+            "options": ["pourquoi", "ça", "va", "Comment", "!", "?", "trouver"],
+            "answer": "Comment ça va?"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/IAmDoingWell.mp3",
+            "options": ["tard", "très", "va", "ça", "bien", "bon"],
+            "answer": "ça va très bien"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio04.mp3",
+            "options": ["en", "Ghana", "bonne journée", "au", "bienvenue", "bien"],
+            "answer": "bienvenue en Ghana"
+          },
+          {
+            "questionType": "mcq",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio05.mp3",
+            "options": ["bonjour", "bonsoir", "bonne journée", "bienvenue", "bien"],
+            "answer": "bonne journée"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio06.mp3",
+            "options": ["tard", "à", "plus", "la", "pluto", "un"],
+            "answer": "à plus tard"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio07.mp3",
+            "options": ["Comment", "tu", "s'appelle", "t'appelles", "comme", "apparaître"],
+            "answer": "Comment tu t'appelles"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio08.mp3",
+            "options": ["ton", "es", "nom", "Eric", "mon", "est"],
+            "answer": "Mon nom est Eric"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio9.mp3",
+            "options": ["suis", "un", "Sam", "Je", "garçon", "dans"],
+            "answer": "Je suis un garçon"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio10.mp3",
+            "options": ["suis", "un", "Sam", "Je", "garçon", "dans"],
+            "answer": "Je suis Sam"
+          }
+        ]
+      }
+    },
+    "intermediate": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "fill-in",
+            "question": "un chat et un _",
+            "audioUrl": "assets/audio/audio11.mp3",
+            "options": ["un", "une", "chien", "chat"],
+            "answer": "chien"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio12.mp3",
+            "options": ["magasin", "au", "veux", "je", "vais", "ou"],
+            "answer": "je vais au magasin"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio13.mp3",
+            "options": ["livre", "est", "un", "c'est", "chien", "chat"],
+            "answer": "c'est un chat"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio14.mp3",
+            "options": ["croissant", "une", "un", "fille", "mange", "mauvais"],
+            "answer": "une fille mange un croissant"
+          },
+          {
+            "questionType": "mcq",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio15.mp3",
+            "options": ["d'où viens-tu", "viens-tu", "do", "fille", "ou", "tu"],
+            "answer": "d'où viens-tu"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio16.mp3",
+            "options": ["viens", "J'", "Londres", "vais", "Je", "de"],
+            "answer": "Je viens de Londres"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio17.mp3",
+            "options": ["Ghana", "j'", "suis", "ghanéen", "je", "de"],
+            "answer": "je suis ghanéen"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio18.mp3",
+            "options": ["as-tu", "ans", "quel", "je", "âge"],
+            "answer": "quel âge as-tu"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio19.mp3",
+            "options": ["ai", "je", "ans", "j'", "douze", "dois"],
+            "answer": "j'ai douze ans"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio20.mp3",
+            "options": ["parle", "français", "parles-tu", "j'", "douze", "France"],
+            "answer": "parles-tu français"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio21.mp3",
+            "options": ["non", "France", "français", "parle", "je'", "Oui"],
+            "answer": "Oui, je parle français"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "What do you hear?",
+            "audioUrl": "assets/audio/audio22.mp3",
+            "options": ["il" , "c'est", "un", "école", "une", "enseigner"],
+            "answer": "c'est une école"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Type what you hear?",
+            "audioUrl": "assets/audio/audio23.mp3",
+            "options": ["grande", "mon", "école", "est", "nom", "et"],
+            "answer": "mon école est grande"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Type what you hear?",
+            "audioUrl": "assets/audio/audio24.mp3",
+            "options": ["fille", "femme", "mange", "petit", "petite", "la"],
+            "answer": "la petite fille mange"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Type what you hear?",
+            "audioUrl": "assets/audio/audio25.mp3",
+            "options": ["homme", "un", "médecin", "est", "l'", "médecine"],
+            "answer": "l'homme est un médecin"
+          }
+        ]
+      }
+    },
+    "advanced": {
+      "section1": {
+        "sectionDescription": "greetings",
+        "questions": [
+          {
+            "questionType": "construct-sentence",
+            "question": "Translate what you hear into French",
+            "audioUrl": "assets/audio/audio26.mp3",
+            "options": ["voir", "tu", "Bonsoir", "c'est", "agréable", "vous", "soir"],
+            "answer": "Bonsoir, c'est agréable de vous voir"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Translate what you hear into French",
+            "audioUrl": "assets/audio/audio27.mp3",
+            "options": [
+              "Je dois aller au médecin.",
+              "J'ai faim.",
+              "Je veux dormir.",
+              "Je vais au cinéma."
+            ],
+            "answer": "Je dois aller au médecin"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Listen to the audio and select the correct response",
+            "audioUrl": "assets/audio/audio28.mp3",
+            "options": [
+              "enchanté",
+              "D'où venez-vous ?",
+              "Merci",
+              "Je suis content"
+            ],
+            "answer": "enchanté"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Translate what you hear into English",
+            "audioUrl": "assets/audio/audio29.mp3",
+            "options": [
+              "I salute you, Sir",
+              "Hello Sir",
+              "I greet you, Sir",
+              "Goodbye Sir"
+            ],
+            "answer": "I salute you, Sir"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Translate what you hear into English",
+            "audioUrl": "assets/audio/audio30.mp3",
+            "options": [
+              "I would like a table for two people.",
+              "I need a room for two.",
+              "I want a table for dinner.",
+              "I need a seat for two."
+            ],
+            "answer": "I would like a table for two people."
+          },
+          {
+            "questionType": "mcq",
+            "question": "Listen to the audio and select the correct translation",
+            "audioUrl": "assets/audio/audio31.mp3",
+            "options": ["i am at the airport", "i am at the store", "i am at the market", "i am in the plane"],
+            "answer": "i am at the airport"
+          },
+
+          {
+            "questionType": "construct-sentence",
+            "question": "Listen to the audio and match the correct words",
+            "audioUrl": "assets/audio/audio32.mp3",
+            "options": ["livre", "table", "bâton", "stylo", "chaise", "café"],
+            "answer": "table, livre, chaise, café"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Listen to the audio and select the correct translation",
+            "audioUrl": "assets/audio/audio33.mp3",
+            "options": [
+              "Can you recommend a good restaurant?",
+              "Where is a good restaurant?",
+              "Do you know a good restaurant?",
+              "I need a good restaurant."
+            ],
+            "answer": "Can you recommend a good restaurant?"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Listen to the audio and choose the correct response",
+            "audioUrl": "assets/audio/audio34.mp3",
+            "options": ["Bonjour", "Ça va bien", "Merci", "Au revoir"],
+            "answer": "Ça va bien"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Translate this into French",
+            "audioUrl": "assets/audio/audio35.mp3",
+            "options": ["Bonsoir", "comment", "vous", "allez", "aujourd'hui", "Bonjour"],
+            "answer": "Bonjour, comment allez-vous aujourd'hui ?"
+          }
+        ]
+      },
+      "section2": {
+        "sectionDescription": "everydayWords",
+        "questions": [
+          {
+            "questionType": "construct-sentence",
+            "question": "Translate this into French",
+            "audioUrl": "assets/audio/audio36.mp3",
+            "options": ["Je", "de", "pain", "le", "bain", "cherche", "salle"],
+            "answer": "Je cherche la salle de bain"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Listen to the audio and choose the correct translation",
+            "audioUrl": "assets/audio/audio37.mp3",
+            "options": [
+              "I would like a glass of water, please.",
+              "Can I have a glass of water?",
+              "I need a bottle of water.",
+              "I want a cup of tea, please."
+            ],
+            "answer": "I would like a glass of water, please."
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Listen to the audio and choose the correct translation",
+            "audioUrl": "assets/audio/audio38.mp3",
+            "options": ["puis-je", "billets", "les", "Où", "acheter", "ou"],
+            "answer": "Où puis-je acheter les billets"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Listen to the audio and complete the sentence: Je voudrais acheter un _.",
+            "audioUrl": "assets/audio/audio39.mp3",
+            "options": ["cadeau", "voiture", "livre", "chaussure"],
+            "answer": "cadeau"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Listen to the audio and complete the sentence: Je voudrais acheter un _.",
+            "audioUrl": "assets/audio/audio40.mp3",
+            "options": ["dois", "trouver", "une", "Je", "pharmacie"],
+            "answer": "pharmacie"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Listen to the audio and choose the correct translation",
+            "audioUrl": "assets/audio/audio41.mp3",
+            "options": [
+              "Where is the train station?",
+              "Where is the restaurant?",
+              "Where is the bus stop?",
+              "Where is the hotel?"
+            ],
+            "answer": "Where is the train station?"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Listen to the audio and complete the sentence: Je cherche un _ pour acheter des souvenirs.",
+            "audioUrl": "assets/audio/audio42.mp3",
+            "options": ["magasin", "hôpital", "boulangerie", "bureau"],
+            "answer": "magasin"
+          },
+          {
+            "questionType": "fill-in",
+            "question": "Listen to the audio and complete the sentence: Je voudrais acheter un _ pour écrire",
+            "audioUrl": "assets/audio/audio43.mp3",
+            "options": ["stylo", "livre", "chaussure", "gâteau"],
+            "answer": "stylo"
+          },
+          {
+            "questionType": "construct-sentence",
+            "question": "Listen to the audio and choose the correct translation",
+            "audioUrl": "assets/audio/audio44.mp3",
+            "options": ["café", "voudrais", "une", "Je", "tasse", "vais", "un"],
+            "answer": "Je voudrais une tasse de café"
+          },
+          {
+            "questionType": "mcq",
+            "question": "Listen to the audio and choose the correct translation",
+            "audioUrl": "assets/audio/audio45.mp3",
+            "options": [
+              "je suis content",
+              "je suis fatigué",
+              "j'ai faim",
+              "je comprends"
+            ],
+            "answer": "je suis fatigué"
+          }
+        ]
+      }
+    }
+  }
+}
